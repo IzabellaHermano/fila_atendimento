@@ -8,6 +8,22 @@ int lista_vazia(t_lista *pl){
     return pl -> primeiro == NULL;
 }
 
+//vip
+void insere_inicio(int e, t_lista *pl){
+    t_no * novo = constroi_no(e);
+    if(lista_vazia(pl) || pl->primeiro->info < 100){
+        novo->proximo = pl->primeiro;
+        pl -> primeiro = novo;
+    }else{
+        t_no * runner = pl->primeiro;
+        while (runner->proximo != NULL && runner ->proximo->info >= 100){
+            runner = runner->proximo;
+        }
+        novo->proximo = runner->proximo;
+        runner->proximo = novo;
+    }
+}
+
 void insere_fim(int e, t_lista *pl){
     t_no *novo = constroi_no(e);
     if (lista_vazia(pl)){

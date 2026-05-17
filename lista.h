@@ -7,6 +7,7 @@ typedef struct lista{
 
 void inicia_lista(t_lista *pl);
 
+void insere_inicio(int e, t_lista *pl);
 void insere_fim(int e, t_lista *pl);
 int remove_inicio(t_lista *pl);
 void exibe_lista(t_lista *pl);
