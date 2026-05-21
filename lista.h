@@ -11,4 +11,5 @@ void insere_inicio(int e, t_lista *pl);
 void insere_fim(int e, t_lista *pl);
 int remove_inicio(t_lista *pl);
 void exibe_lista(t_lista *pl);
+int tamanho_lista(t_lista *lista);
 int lista_vazia(t_lista *pl);
