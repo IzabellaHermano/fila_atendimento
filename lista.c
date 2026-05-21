@@ -57,6 +57,16 @@ void exibe_lista(t_lista *pl){
             printf("%d -> ", runner ->info);
             runner = runner ->proximo;
         }
-        printf("//\n");
+        printf("Fim da fila\n");
     }   
+}
+
+int tamanho_lista (t_lista *pl) {
+    int cont = 0;
+    t_no *runner = pl->primeiro;
+    while (runner != NULL) {
+        cont++;
+        runner = runner->proximo;
+    }
+    return cont;
 }

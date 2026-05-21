@@ -52,6 +52,7 @@ int main()
         }
         else if (opcao == 4)
         {
+            printf ("\nPessoas na fila: %d\n", tamanho_lista(&fila));
             exibe_lista(&fila);
         }
         else if (opcao == 5)
